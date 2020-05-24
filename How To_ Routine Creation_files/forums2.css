@@ -1,0 +1,1364 @@
+/*////////////////// RESET //////////////*/
+
+
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+
+	margin:0;
+
+	padding:0;
+
+	font-size:14px;
+
+}
+
+table {
+
+	border-collapse:collapse;
+
+	border-spacing:0;
+
+}
+
+fieldset, img {
+
+	border:0;
+
+}
+
+address, caption, cite, code, dfn, th, var {
+
+	font-style:normal;
+
+	font-weight:normal;
+
+}
+
+ol, ul {
+
+	list-style:none;
+
+}
+
+caption, th {
+
+	text-align:left;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+	font-size:100%;
+
+	font-weight:normal;
+
+}
+
+q:before, q:after {
+
+	content:''
+
+}
+
+abbr, acronym {
+
+	border:0;
+
+}
+
+.headerWrapper div {
+
+	position:relative;
+
+}
+
+/*////////////////// UTILS //////////////*/
+
+
+
+.clr {
+
+	width:1px;
+
+	height:1px;
+
+	margin:-1px;
+
+	clear:both;
+
+	font-size:1px;
+
+}
+
+.left {
+
+	float:left;
+
+}
+
+.right {
+
+	float:right;
+
+}
+
+.half {
+
+	width:49.9%;
+
+}
+
+.third {
+
+	width:33.2%;
+
+}
+
+.quarter {
+
+	width: 24.9%;
+
+}
+
+.spacer {
+
+	padding:10px;
+
+}
+
+/*////////////////// GENERAL //////////////*/
+
+
+
+html {
+
+	overflow:auto;
+
+}
+
+body {
+
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+.masterWrapper {
+
+	margin:0 auto;
+
+	padding:10px 0 0 0;
+
+	z-index:1;
+
+}
+
+.headerWrapper {
+
+	z-index:3;
+	height:180px;
+
+}
+
+.header {
+
+	margin:0 auto;
+
+}
+
+.display {
+
+	width:770px;
+
+	float:left;
+
+	padding:0 0 0 10px;
+
+	margin:0 330px 0 0;
+
+}
+
+.content {
+
+	padding:0px 0 0 0;
+
+	z-index:2;
+
+}
+
+.side {
+
+	float:right;
+
+	width:300px;
+
+	padding:0 10px 0 0;
+
+	margin:0 0 0 -330px;
+
+}
+
+.footerWrapper {
+
+}
+
+.footer {
+
+	margin:0 auto;
+
+	padding:0 0 10px 0;
+
+	z-index:1;
+
+}
+
+.copyright {
+
+	text-align:center;
+
+}
+
+.masterWrapper, .header, .topMenu, .center {
+
+	min-width:820px;
+
+	max-width:1100px;
+
+}
+
+.center {
+
+	margin:0 10px;
+
+	min-width:850px;
+
+}
+
+.menuWrapper {
+
+	min-width:810px
+
+}
+
+/*////////////////// 	Menu   //////////////*/
+
+
+
+.menuWrapper {
+
+	height:80px;
+
+	margin:0 20px 0 0;
+
+	padding:0 30px 0 10px;
+
+	background:url(https://cdn.pegym.com/forums/images/bgMenuWrapper.png) left top no-repeat;
+
+}
+
+.menuWrapper .tail {
+
+	position:absolute;
+
+	top:0;
+
+	right:-20px;
+
+	height:80px;
+
+	width:20px;
+
+	background:url(https://cdn.pegym.com/forums/images/bgMenuWrapper.png) right top no-repeat;
+
+}
+
+.topMenu {
+
+	height:44px;
+
+	top:18px;
+
+	left:20px;
+
+	background:url(https://cdn.pegym.com/forums/images/bgTopMenu.png) left top no-repeat;
+
+	margin:0 auto;
+
+	padding:0 0 0 10px;
+
+	min-width:800px;
+
+}
+
+.topMenu .tail {
+
+	position:absolute;
+
+	top:0;
+
+	right:0px;
+
+	width:10px;
+
+	height:44px;
+
+	background:url(https://cdn.pegym.com/forums/images/bgTopMenu.png) right top no-repeat;
+
+	z-index:2;
+
+}
+
+.moduletable-search {
+
+	float:right;
+
+	width:160px;
+
+	height:44px;
+
+	right:10px;
+
+	padding:13px 20px 0 20px;
+
+	background:url(https://cdn.pegym.com/forums/images/bgTopmenuBlack.png) center top no-repeat;
+
+	z-index:1;
+
+}
+
+.moduletable-search form {
+
+	float:left;
+
+}
+
+.moduletable-nav {
+
+	float:left;
+
+	width:auto;
+
+}
+
+.moduletable-new {
+
+    float: left;
+
+    width: 70%;
+
+}	
+
+	
+
+.menu {
+
+	text-align:center;
+
+	position:relative;
+
+}
+
+.menu li {
+
+	
+
+	position:relative;
+
+	float:left;
+
+	padding:0 1px 0 1px;
+
+}
+
+.menu li a {
+
+	color:#666;
+
+	font-size:12px;
+
+	padding:5px 15px 5px 15px;
+
+	display:block;
+
+	line-height:normal;
+}
+
+.menu li:hover {
+
+	cursor:pointer;
+
+}
+
+.menu li:hover a {
+
+	text-decoration:none;
+
+	color:#fff;
+
+}
+
+.menu li ul {
+
+	display:none;
+
+	position:absolute;
+
+	top:44px;
+
+}
+
+.menu li:hover ul {
+
+	display:block;
+
+	position:absolute;
+
+	top:44px;
+
+	left:0;
+
+	width:150px;
+
+}
+
+.menu li:hover ul li, .menu li ul li {
+
+	text-align:left;
+
+	float:none;
+
+	background-color:#6b6b6b;
+
+	width:150px;
+
+	height:30px;
+
+	line-height:30px;
+
+	padding:0 0 0 0;
+
+}
+
+.menu li:hover ul li:hover {
+
+	background:#999;
+
+}
+
+.menu li ul li a {
+
+	display:block;
+
+	color:#ccc;
+
+	line-height:30px;
+
+	padding:0 0 0 10px;
+
+	font-size:14px;
+
+}
+
+.menu li:hover ul li:hover a {
+
+	color:#fff;
+
+}
+
+.menu div {font-weight:normal;}
+
+/*////////////////// Round Box //////////////*/
+
+
+
+.boxWrapper {
+
+	margin:0 0 0 0;  
+        width:70%
+
+}
+
+.boxWrapperInner {margin:0 0 0 0; width:70%;}
+
+/*//SET ROUNDBOX HEADER HEIGHT//*/
+
+
+
+.boxWrapper .boxHeader, .boxWrapper .boxHeader .tail, .boxWrapperInner .boxHeader, .boxWrapperInner .boxHeader .tail {
+
+	height:26px;
+
+}
+
+.white .boxHeader, .white .boxHeader .tail, .boxHeaderEmpty .tail {
+
+	height:5px;
+
+}
+
+/*//SET ROUNDBOX FOOTER HEIGHT//*/
+
+
+
+.boxWrapper .boxFooter, .boxWrapper .boxFooter .tail, .boxWrapper .boxFooter-inside, .boxWrapper .boxFooter-inside .tail, .boxWrapperInner .boxFooter, .boxWrapperInner .boxFooter .tail, .boxWrapperInner .boxFooter-inside, .boxWrapperInner .boxFooter-inside .tail {
+
+	height:5px;
+
+}
+
+/*//SET ROUNDBOX HEADER/FOOTER TAIL WIDTH//*/
+
+
+
+.boxWrapper .boxFooter .tail, .boxWrapper .boxHeader .tail, .boxHeaderEmpty .tail, .boxWrapper .boxFooter-inside .tail, .boxWrapperInner .boxFooter .tail, .boxWrapperInner .boxHeader .tail, .boxHeaderEmpty .tail, .boxWrapperInner .boxFooter-inside .tail {
+
+	width:10px;
+
+}
+
+.moduletable-tri-white .moduletable-dleft2 {
+
+	width: 15%;
+
+	float: left;
+
+}
+
+.moduletable-tri-white .moduletable-dright2 {
+
+	width: 42%;
+
+	float: right;
+
+}
+
+.boxHeaderEmpty, .boxHeaderEmpty .tail {
+
+	height:10px;
+
+}
+
+.boxWrapper .boxHeader, .boxWrapper .boxFooter, .boxHeaderEmpty, .boxWrapper .boxFooter-inside, .boxWrapperInner .boxHeader, .boxWrapperInner .boxFooter, .boxHeaderEmpty, .boxWrapperInner .boxFooter-inside {
+
+	margin:0 10px 0 0;
+
+}
+
+.boxWrapper .boxHeader .tail, .boxHeaderEmpty .tail,  .boxWrapper .boxFooter .tail, .boxWrapper .boxFooter-inside .tail, .boxWrapperInner .boxHeader .tail, .boxHeaderEmpty .tail,  .boxWrapperInner .boxFooter .tail, .boxWrapperInner .boxFooter-inside .tail {
+
+	position:absolute;
+
+	top:0;
+
+	right:-10px;
+
+	font-size:1px;
+
+}
+
+.boxWrapper .boxHeader .tail, .boxHeaderEmpty .tail {
+
+	background-position:right top;
+
+}
+
+.boxWrapper .boxContent, .moduletable-inside .boxWrapper .boxContent {
+
+	padding:10px 10px;
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+	background-color:#fff;
+
+}
+
+.boxWrapper .boxFooter .tail, .boxWrapper .boxFooter-inside .tail {
+
+	background-position:right bottom;
+
+}
+
+.footer .boxWrapper {
+
+	margin:0 10px 10px 10px;
+
+}
+
+.footer .boxHeader, .footer .boxHeader .tail,  .footer .boxFooter, .footer .boxFooter .tail {
+
+	background-image:url(https://cdn.pegym.com/forums/images/bgFooter.png);
+
+	height:5px;
+
+}
+
+.footer .boxContent {
+
+	background-color:#f2f2f2;
+
+	padding:0 10px;
+
+	height:auto;
+
+}
+
+/*////////////////// MODULES //////////////*/
+
+
+
+.moduletable-ad {
+
+	text-align:center;
+
+}
+
+.moduletable-ad .boxContent, .moduletable-none .boxContent {
+
+	background:none;
+
+	border:none;
+
+	padding:0;
+
+}
+
+/*////////////////// Forms //////////////*/
+
+
+
+.formRow {
+
+	padding:5px 0;
+
+}
+
+
+textarea {
+
+	
+
+/*	float:left; */
+
+	position:relative;
+
+	padding:0 5px;
+
+	width:300px;
+
+	height:200px;
+
+	border:1px solid #ccc;
+
+	overflow:auto;
+
+}
+
+input {
+
+/*	float:left; */
+
+	padding:0 5px;
+
+	border:1px solid #ccc;
+
+}
+
+input.checkbox {
+
+	position:relative;
+
+	float:left;
+
+	width:auto;
+
+	margin:2px 2px 0 2px;
+
+}
+
+input.radio {
+
+	position:relative;
+
+	float:left;
+
+	width:auto;
+
+	margin:1px 2px 0 2px;
+
+}
+
+input.button {
+
+	position:relative;
+
+	float:none;
+
+	width:auto;
+
+	border:none;
+
+	background-color:#09F;
+
+}
+
+.login input.button {
+
+	position:relative;
+
+	float:none;
+
+	width:69px;
+
+	height:20px;
+
+	border:none;
+
+	margin:0 0 0 0;
+
+	padding:0 0 3px 0;
+
+	background:url(https://cdn.pegym.com/forums/images/bg-loginbtn.png) no-repeat;
+
+}
+
+.login input.inputbox-pass, .login input.inputbox-user {
+
+	border:none;
+
+	width:82px;
+
+	height:20px;
+
+	padding:0 0 0 20px;
+
+	font-size:12px;
+
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+
+}
+
+.login input.inputbox-user {
+
+	background:url(https://cdn.pegym.com/forums/images/bg-user.png) no-repeat;
+
+}
+
+.login input.inputbox-pass {
+
+	background:url(https://cdn.pegym.com/forums/images/bg-pass.png) no-repeat;
+
+}
+
+.login .formElement {
+
+	position:relative;
+
+	float:left;
+
+	padding:5px 7px 0 0;
+
+}
+
+.login .formElement a {
+
+	font-size:11px;
+
+}
+
+.login .formElement a.signUpBtn {
+
+	display:block;
+
+	width:80px;
+
+	height:20px;
+
+	text-indent:-5000px;
+
+	background:url(https://cdn.pegym.com/forums/images/bg-signupbtn.png) 0 0 no-repeat;
+
+}
+
+input.searchbutton {
+
+	margin:0;
+
+}
+
+input.file {
+
+	border:1px solid #ccc;
+
+}
+
+select {
+
+	width:162px;
+
+	border:1px solid #ccc;
+
+	overflow:auto;
+
+}
+
+/*////////////////// Text //////////////*/
+
+
+
+h1 {
+
+	padding:25px 0px 0px 0px;
+
+	width:343px;
+
+}
+
+#logo a {
+
+	display:block;
+
+	width:343px;
+
+	height:100px;
+
+	text-indent:-5000px;
+
+	outline:none;
+
+	background:url(https://cdn.pegym.com/forums/images/logo.png) no-repeat;
+
+}
+
+h1.contentheading {
+
+	font-size:28px;
+
+	color:#666;
+
+	padding:0 0 10px 0;
+
+}
+
+.boxContent h3 {
+
+	padding:0;
+
+}
+
+h4 {
+
+	font-size:14px;
+
+	color:#666;
+
+	padding:0px 10px;
+
+}
+
+h5 {
+
+	font-size:12px;
+
+	color:#666;
+
+	padding:0px 10px;
+
+}
+
+h6 {
+
+	font-size:11px;
+
+	font-weight:bold;
+
+	color:#666;
+
+	padding:0px 10px;
+
+}
+
+p {
+
+	padding:0 0 10px 10px;
+
+	line-height:16px;
+
+}
+
+.footer p {
+
+	padding:0;
+
+	line-height:20px;
+
+}
+
+a:link, a:visited {
+
+	text-decoration:none;
+
+}
+
+a:hover {
+
+	text-decoration:underline;
+
+}
+
+.login a {
+
+	line-height:20px;
+
+	color:#CCC;
+
+}
+
+/*////////////////// Listings //////////////*/
+
+
+
+ul.jr_listings_mod li {
+
+	padding:5px 0 10px;
+
+}
+
+ul.jr_listings_mod li.listItem img {
+
+	padding:0 10px 0 0;
+
+}
+
+.jr_listScope ul li {
+
+	float:left;
+
+	position:relative;
+
+	width:30%;
+
+}
+
+/*////////////////// JReviews CATEEGORY List //////////////*/
+
+
+
+table.jr_pagination td {
+
+	height:26px;
+
+	padding:0 5px;
+
+}
+
+table#jr_pagination_top td {
+
+	height:26px
+
+}
+
+div.jr_tableview {
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+}
+
+div.jr_pgContainer {
+
+	margin:0 0 20px 0;
+
+}
+
+p {
+
+	margin: .4em 0 .5em 0;
+
+	line-height: 1.5em;
+
+}
+
+div.jr_pgContainer ul {
+
+	list-style:inside
+
+}
+
+.box {
+
+	padding:0 20px 0 20px;
+
+	border: solid;
+
+}
+
+
+
+.article {
+
+	width:100%;
+
+	overflow:hidden;
+
+	padding:0 0 15px 0;
+
+	margin:0 0 15px 0;
+	
+	border-bottom: 1px dotted #E0EEF8;
+
+}
+
+.article p {
+
+	margin:0;
+
+	padding:0;
+
+}
+
+.article p.img, .article p.noImg {
+
+	width:120px;
+
+	height:120px;
+
+	padding:0 15px 0 0;
+
+	float:left;
+
+}
+
+.article p.img img, .article p.noImg img {
+
+	width:110px;
+
+	height:110px;
+
+	padding:4px;
+
+	border:solid 1px #d5d5d5;
+
+}
+
+.article p.img a {
+
+	width:120px;
+
+	height:120px;
+
+	display:block;
+
+}
+
+.article p.author, .article div.articleContent, .article h3.title {
+
+	width:600px;
+
+	float:left;
+
+}
+
+.outer {
+
+	width:100%;
+
+	height:auto;
+
+	float:left;
+
+}
+
+.side ul.rightWidget {
+
+	margin:0;
+
+	padding:0;
+
+}
+
+.side ul.rightWidget li {
+
+	list-style:none;
+
+	width:300px;
+
+	float:left;
+
+	margin:0 0 15px 0;
+
+}
+
+
+
+.side ul.rightWidget li.widget_search label.screen-reader-text {
+
+	display:none;
+
+}
+
+.side ul.rightWidget li.widget_search input#s {
+
+	padding:5px;
+
+	width:200px;
+
+	float:left;
+
+	border:solid 1px #CCC;
+
+	-webkit-border-radius: 5px;
+
+-moz-border-radius: 5px;
+
+border-radius: 5px;
+
+}
+
+.side ul.rightWidget li.widget_search input#searchsubmit {
+
+	width:70px;
+
+	float:left;
+
+	margin:0 0 0 10px;
+
+	padding:5px;
+
+	color:#fff;
+
+	font-weight:bold;
+
+	cursor:pointer;
+
+	border:none;
+
+	background:url(https://cdn.pegym.com/forums/images/bgMenuWrapper.png) center -15px no-repeat;
+
+	-webkit-border-radius: 5px;
+
+-moz-border-radius: 5px;
+
+border-radius: 5px;
+
+}
+
+.side ul.rightWidget li.popular-posts p.text, .side ul.rightWidget li.popular-posts ul.list {
+
+	padding:10px 10px 10px 10px;
+
+	margin:0;
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+	background-color:#fff;
+
+	height:186px;
+
+}
+
+
+
+
+
+.side .sideBarTwo ul.rightWidget li.widget_text .textwidget {
+
+	padding:10px 10px 10px 10px;
+
+	margin:0;
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+	background-color:#fff;
+
+}
+
+/*
+
+.side .sideBarTwo ul.rightWidget {
+
+	padding:10px 10px 10px 10px;
+
+	margin:0;
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+	background-color:#fff;
+
+}
+
+
+
+li.widget_text .textwidget1 {
+
+	margin:0;
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+	background-color:#fff;
+
+}
+
+
+
+*/
+
+.midWidgetSec, .moduletable, .moduletable-ad {
+
+	width:100% !important;
+
+	float:left;
+
+}
+
+.midWidgetSec {
+
+	margin:0 0 10px 0;
+
+}
+
+ul.midWidget li.widget_categoryposts ul.list {
+
+	padding:10px 10px 10px 10px;
+
+	margin:0;
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+	background-color:#fff;
+
+	list-style:none;
+
+}
+
+ul.midWidget li.widget_categoryposts {
+
+	width:385px;
+
+	float:left;
+
+	padding:0 0px 0 0;
+
+}
+
+ul.midWidget li.Vbulletin_lt_widget {
+
+	width:100%;
+
+	float:left;
+
+	padding:0 0px 0 0;
+
+}
+
+
+/* start mine */
+
+.side ul.rightWidget li.widget_categories ul,.side ul.rightWidget li.rp_widget ul {
+
+	padding:10px 10px 10px 10px;
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+	background-color:#fff;
+
+	height:186px;
+
+}
+
+
+
+.fblike{
+
+overflow:hidden;
+
+padding:0px 0px 0px 10px;
+
+width:100%;
+
+}
+
+/* end mine */
+
+
+
+
+
+/**********Custom Project Overwrites - keep these here until the end of the project, then move in appropriate sections ******/
+
+
+
+h3.widget-title {padding-left:10px;}
+
+
+
+.regForm {background: #fff;}
+
+.regForm input {width:150px; height:25px;border:1px solid #000;}
+
+.articleInfo {padding-bottom:10px;float:left; width:600px;}
+
+.articleInfoInner {padding-bottom:10px;float:left; width:400px;}
+
+.auth {float:left; padding-right:20px; display:block; width:400px}
+
+.cat-links {float:left; margin-right:25px;width:500px;}
+
+.comments-link {float:right;}
+
+.comments-link a {color:#c76566; font-weight:bold;}
+
+.boxFooter {margin-bottom:15px !important;}
+
+.more {float:right;}
+
+.menu div {font-size:11px;}
+
+.featureImage {float:left;width:348px;}
+
+.boxContentInner {
+	padding:10px 10px;
+
+	border-left:1px solid #ccc;
+
+	border-right:1px solid #ccc;
+
+	background-color:#fff;
+float:left;}
+
+.summary {float:left;width:400px;}
+
+.summary p {margin:0; padding:0;}
+
+a.rw-report-link {display:none !important;}
+
+.widget_listfeaturedpostswidget .boxHeader {margin-top:10px;}
+
+.articleContent .rw-left {display:none;}
+
+
+
+/********** Contact Form *************/
+
+.wpcf7 input {width:400px; height:25px; border:solid 1px #CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px; }
+
+.wpcf7 textarea {width:400px; border:solid 1px #CCC; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+
+.wpcf7 .wpcf7-submit {width:150px; background-color:#1b4d7e; color:#fff; border:none; float:left; margin-left:265px;}
+
+.wpcf7 .wpcf7-submit:hover, .wpcf7 .wpcf7-submit:active {width:150px; background-color:#fff; color:#1b4d7e;}
+
+#search-3 {margin-top:-63px; margin-bottom:-10px;}
